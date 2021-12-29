@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  바닥글 고정 패턴은 콘텐츠가 표시 영역 높이보다 짧은 경우 페이지 바닥글이 
+  표시 영역 하단에 "고정"되는 방법.
+  이 코드에서 바닥글 고정 패턴을 만드는 몇 가지 기술을 설명한다.
+
+  다음 요구 사항을 충족해야 함.
+  - 콘텐츠가 짧으면 바닥글이 뷰포트 하단에 고정
+  - 페이지의 콘텐츠가 뷰포트 하단을 지나 확장되면 바닥글은 정상적으로 콘텐츠 아래에 위치
+  
+  방법 1 : 
+  CSS Grid Layout을 사용하여 스티키풋터 구현
+  .wrapper 클래스는 100%의 최소 높이를 가짐. 
+  세개의 행을 가지는 싱글 컬럼 그리드 레이아웃을 구성함.
+
+  그리드 자동 배치는 항목을 소스 순서대로 배치하므로 헤더는 첫 번째 자동 크기 트랙으로, 
+  주요 콘텐츠는 1fr 트랙으로, 바닥글은 최종 자동 크기 트랙으로 구성
+  1fr 트랙은 사용 가능한 모든 공간을 차지하므로 격차를 채우기 위해 커진다.
+
+  min-height: 100% 로 설정된 wrapper 사용.
+  <body> 에서 최소 높이를 100vh로 설정한 다음 grid container로 사용하여 전체페이지에서 
+  수행할 수도 있음.
+
+  그리드 레이아웃을 지원하지 않는 브라우저와의 호환성이 필요한 경우 Flexbox를 사용하여 고정 바닥글을 만들 수도 있음 ==> stickyFooter2.html
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100%;
+      background-color: #fff;
+      color: #333;
+      font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .dbg {
+      border: 1px dotted #f00;
+    }
+
+    .wrapper {
+      min-height: 100%;
+      /* min-height : 100% */
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      /* display: flex;
+      flex-direction: column; */
+    }
+
+    .page-header,
+    .page-footer {
+      background-color: #5c5c5c;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .page-body {
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper dbg">
+    <header class="page-header dbg">이 부분은 header 영역</header>
+    <article class="page-body dbg">
+      <p>Main page content, add more if you want to see the footer push down.</p>
+    </article>
+    <footer class="page-footer dbg">바닥으로 붙는 footer</footer>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  display: block;
+  float: right;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.wrapper {
+  width: 200px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 13px;
+}
+
+.navbar-wrapper > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.navbar-wrapper > a:hover {
+  text-decoration: underline;
+}
+
+.app,
+.account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.app:hover,
+.account:hover {
+  background-color: #f2f2f2;
+}
+
+.account > img {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.app > i {
+  font-size: 17px;
+  color: #5f6268;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 30px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 280px;
+  width: 45%;
+  height: 45px;
+  border: 1px solid #e7e7e7;
+  border-radius: 30px;
+  padding: 5px 15px;
+  margin: 25px;
+}
+
+.search:hover {
+  box-shadow: 0 1px 6px rgb(33 33 33 / 28%);
+}
+
+.search i {
+  width: 15px;
+  height: 15px;
+  color: #a5a5a5;
+}
+
+.search input {
+  width: 90%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+}
+
+.search img {
+  cursor: pointer;
+}
+
+.search-button button {
+  background-color: #d5d5d5;
+  border: 1px solid #f9f9f9;
+  border-radius: 4px;
+  color: #404040;
+  font-size: 0.9em;
+  text-align: center;
+  padding: 10px 16px;
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+.search-language {
+  display: flex;
+  font-size: 14px;
+  margin: 30px 0;
+}
+
+.search-language a {
+  text-decoration: none;
+  color: blue;
+  padding: 0 5px;
+}
+
+footer {
+  bottom: 0;
+  background-color: rgb(238, 238, 238);
+  height: 11vh;
+}
+
+.location {
+  padding: 1em;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.footmenu ul > li {
+  list-style-type: none;
+  float: left;
+  margin: 0 1.2em;
+}
+
+.footmenuleft {
+  float: left;
+  height: 4vh;
+  padding-top: 1em;
+}
+
+.footmenuright {
+  float: right;
+  height: 4vh;
+  padding-top: 1em;
+}

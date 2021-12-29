@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.main{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.text{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  line-height: 100vh;
+  color: antiquewhite;
+  text-align: center;
+  background-color: transparent;
+  z-index: 4;
+}
+.text h2{
+  font-size: 3em;
+}
+
+button{
+  position: fixed;
+  bottom: 60px;
+  margin-left: 50%;
+  width: 50px;
+  border: none;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 3rem;
+}
+button:hover{
+  background-color: rgb(173, 173, 173);
+  background-color: rgba(173, 173, 173, 0.6);
+  border-radius: 30px;
+}
+
+img {
+  height: 100vh;
+  width: 100%;
+  z-index:-1;
+}
+
+.overlay {
+  z-index: 2;
+  position: fixed;
+  width: 100%; height: 100vh;
+  left: 0; top: 0;
+  background-color: rgba(0,0,0, 0.4);
+  overflow-x: hidden;
+  /* 오버레이가 먹히지 않아요! */
+}
+
+@media screen and (max-width:600px){
+  main{
+      overflow: visible;
+  }
+  .text{
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      line-height: 100vh;
+      color: antiquewhite;
+      text-align: center;
+      background-color: transparent;
+      white-space: pre-line;
+  }
+}

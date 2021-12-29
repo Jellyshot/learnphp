@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+  Google UI Clone using just HTML & CSS
+  2021-11-25, Thu.
+  첫번째 방법으로 position과 float를 주로 하여 레이아웃을 구성해보자.
+  In this Code, I will configure the layout using only position and float.
+-->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clone Google using position and float</title>
+  <link rel="stylesheet" href="css/clone_google1_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- navbar -->
+  <div class="navbar dbg">
+    <div class="navbarleft dbg">
+      <ul>
+        <li><a href="#">Google 정보</a></li>
+        <li><a href="#">스토어</a></li>
+      </ul>
+    </div>
+    <div class="navbaright dbg">
+      <ul>
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">이미지</a></li>
+        <li><a href="#">
+          <div class="gb_app">
+            <svg style="fill:rgb(124, 124, 124);" viewBox="0 0 24 24">
+              <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+            </svg>
+          </div>
+        </a></li>
+        <li><a href="#" ><img  id ="profileimg" src="/img/profile.webp" alt=""></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- wrapper -->
+  <div class="wrapper dbg">
+    <div class="container dbg">
+      <div class="imglogo">
+        <img src="/img/logo.png">
+      </div>
+      <div class="search dbg">
+        <div class="searchbar dbg">
+          <i class="fa fa-search"></i>
+          <input type="text">
+          <i class="fa fa-microphone"></i>
+        </div>
+        <div class="search-buttons dbg">
+          <button>Google Search</button>
+          <button>I'm Feeling Lucky</button>
+        </div>
+        <div class="offered-in">
+          <p>Google offered in : <a>English</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="location">
+      대한민국
+    </div>
+    <div class="footmenu">
+      <div class="footmenuleft">
+        <ul>
+          <li><a href="#">광고</a></li>
+          <li><a href="#">비즈니스</a></li>
+          <li><a href="#">검색의 원리</a></li>
+        </ul>
+      </div>
+      <div class="footmenuright">
+        <ul>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">약관</a></li>
+          <li><a href="#">설정</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 
+    2021-11-15, layout - to center an element
+    To center one box inside another we make the containing box a flex container. Then set align-items to center to perform centering on the block axis, and justify-content to center to perform centering on the inline axis. 
+  -->
+  <style>
+    .dbg {
+      border: 1px dotted #f00;
+    }
+    .container {
+      height: 200px;
+      /* height: 100vh; */ /* 화면 전체의 높이를 차지하려면 vh로 할것 */
+      display: flex;
+      align-items: center;   /* 세로축에서 가운데로 */
+      justify-content: center; /* 가록축에서 가운데로 */
+    }
+
+    .item {
+      padding: 2em;
+      width: 10em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container dbg">
+    <div class="item dbg">I am centered</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Footer - 2 </title>
+  <style>
+    html {
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100%;
+      background-color: #fff;
+      color: #333;
+      font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .dbg {
+      border: 1px dotted #f00;
+    }
+
+    .wrapper {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page-header,
+    .page-footer {
+      flex-shrink: 0;
+      background-color: #5c5c5c;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .page-body {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper dbg">
+    <header class="page-header dbg">이 부분은 header 영역</header>
+    <article class="page-body dbg">
+      <p>Main page content, add more if you want to see the footer push down.</p>
+    </article>
+    <footer class="page-footer dbg">바닥으로 붙는 footer</footer>
+  </div>
+
+</body>
+
+</html>

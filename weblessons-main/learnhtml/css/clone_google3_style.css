@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dbg {
+  border: 1px dotted red;
+}
+
+.allobj {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+  height: 60px;
+}
+
+.navbar-left {
+  flex-grow: 1;
+  flex: 15%;
+  line-height: 60px;
+}
+
+.navbar-center {
+  flex: 70%;
+}
+.navbar-right {
+  flex-grow: 1;
+  flex: 15%;
+  line-height: 60px;
+}
+
+.navbar ul > li {
+  list-style-type: none;
+  float: left;
+  margin: 0 0.5em;
+}
+
+li > a {
+  text-decoration: none;
+  color: black;
+}
+
+li > a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.imgcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 290px;
+  height: calc(100% - 560px);
+  min-height: 92px;
+}
+
+.imgbox {
+  display: block;
+  max-height: 100%;
+  position: relative;
+  margin-top: auto;
+}
+
+.imglogo {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  width: auto;
+}
