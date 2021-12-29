@@ -19,6 +19,8 @@
   $cpasswd = $_POST['cpasswd'];
   $cellphone = $_POST['cellphone'];
   $email = $_POST['email'];
+  $birth = $_POST['birth'];
+  $gender = $_POST['gender'];
   
   // validation 작업 수행
   // 단계 1. 비밀번호와 확인용 비밀번호 일치 확인
@@ -27,7 +29,10 @@
     header('Location: oo_user_registform.html');
   } else{
   // 단계 2. 정규식 적용,FORM VALIDATION 작업 진행
-
+  ID : ^[a-z][A-Z]+[0-9]+{4,8}$/
+  PWD : 
+  이름 : 한글 1글자이상 4글자 이하
+  전화번호: xxx-xxxx-xxxx
   
   // create connection
   $conn = new mysqli($dbservername, $dbusername, $dbpassword, $dbname);
