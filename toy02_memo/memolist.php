@@ -43,8 +43,18 @@ require "./adbconfig.php";
 </head>
 
 <body>
+  <header>
+    <div class="menu_icon">
+      <sapn>&#9776;</sapn>
+    </div>
+  </header>
   <h1>메모 목록</h1>
-  <br><br>
+  <br>
+  <div class="buttons">
+    <a href="create.php"><button>New</button></a>
+    <a href="./info.php"><button>Back</button></a>
+  </div>
+  <br>
   <div class="container">
     <?php
     $sql = "SELECT * FROM webmemo.notepad";
@@ -54,15 +64,11 @@ require "./adbconfig.php";
       echo "<table><tr><th>No.</th><th>USERNAME</th><th>Title</th><th>Memo</th><th>Writing date</th><th>Last Update</th></tr>";
       // out data of each row
       while ($row = $resultset->fetch_assoc()) {
-        
-        echo "<tr><td>" . $row['no'] . "</td><td>" . $row['username'] . "</td><td>" . $row['title'] . "</td><td><a href='detailview.php?no=" . $row['no'] . "'>".$row['memo']."</a></td><td>" . $row['wrtime'] . "</td><td>" . $row['uptime'] . "</td></tr>";
+
+        echo "<tr><td>" . $row['no'] . "</td><td>" . $row['username'] . "</td><td>" . $row['title'] . "</td><td><a href='detailview.php?no=" . $row['no'] . "'>" . $row['memo'] . "</a></td><td>" . $row['wrtime'] . "</td><td>" . $row['uptime'] . "</td></tr>";
       }
     }
     ?>
-  </div>
-  <div class="buttons">
-    <a href="create.php"><button>New</button></a>
-    <a href="./info.php"><button>Back</button></a>
   </div>
 </body>
 

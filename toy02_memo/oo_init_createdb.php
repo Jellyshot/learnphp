@@ -44,7 +44,7 @@ if ($conn->query($sql) == TRUE) {
 }
 
 // 애플리케이션이 사용할 계정을 생성하고 동일한 이름의  데이터베이스를 생성한다.
-// $sql = "CREATE DATABASE IF NOT EXISTS webMemo";
+// $sql = "CREATE DATABASE IF NOT EXISTS webmemo";
 // 여러개의 sql명령어를 하나의 sql 스티링으로 처리시 오류 발생함!!
 // 다음의 4 단계로 나누어 처리하도록 수정함!!
 // 1. 사용자 계정을 생성하고, 

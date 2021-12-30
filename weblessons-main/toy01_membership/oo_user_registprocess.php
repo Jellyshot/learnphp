@@ -29,10 +29,10 @@
     header('Location: oo_user_registform.html');
   } else{
   // 단계 2. 정규식 적용,FORM VALIDATION 작업 진행
-  ID : ^[a-z][A-Z]+[0-9]+{4,8}$/
-  PWD : 
-  이름 : 한글 1글자이상 4글자 이하
-  전화번호: xxx-xxxx-xxxx
+  // ID : ^[a-z][A-Z]+[0-9]+{4,8}$/
+  // PWD : 
+  // 이름 : 한글 1글자이상 4글자 이하
+  // 전화번호: xxx-xxxx-xxxx
   
   // create connection
   $conn = new mysqli($dbservername, $dbusername, $dbpassword, $dbname);

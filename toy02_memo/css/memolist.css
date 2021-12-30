@@ -1,14 +1,27 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
 :root{
     --white-color: #fffffb;
     --mainGreen-color:#aed581;
     --lightGreen-color: #e1ffb1;
     --darkGreen-color: #7da453;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white-color);
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+}
+.menu_icon{
+    float: right;
+    padding: 20px;
+    font-size: 30px;
+    color: var(--mainGreen-color);
+    cursor: pointer;
 }
 h1{
     text-align: center;
@@ -16,8 +29,8 @@ h1{
 }
 .container{
     width: 100%;
-    border: 1px solid #000;
     min-height: 50vh;
+    overflow: hidden;
 }
 table{
     border-top: 1px solid var(--darkGreen-color);
@@ -28,6 +41,10 @@ table{
 th, td{
     border-bottom: 1px solid var(--darkGreen-color);
     padding: 10px;
+    text-align: center;
+}
+td{
+    text-align: center;
 }
 
 button{
@@ -38,6 +55,7 @@ button{
     cursor: pointer;
 }
 .buttons{
-    border: 1px solid green;
-    text-align: center;
+    display: block;
+    width: 80%;
+    margin: auto;
 }

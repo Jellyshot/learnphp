@@ -25,6 +25,7 @@ header{
     padding: 20px;
     font-size: 30px;
     color: var(--white-color);
+    cursor: pointer;
 }
 .container{
     border: 10px double var(--white-color);

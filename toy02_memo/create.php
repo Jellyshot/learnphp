@@ -14,9 +14,11 @@
 
 <body>
     <header>
-        <p style="font-size: 30px;">New Memo</p>
+        <div class="menu_icon">
+            <sapn>&#9776;</sapn>
+        </div>
     </header>
-
+    <h1>New Memo</h1>
     <form class=form action="create_process.php" method="post">
         <div class="date">
             <?php
@@ -24,14 +26,17 @@
             echo "작성일시: " . $currdt;
             ?>
         </div>
+        <br>
         <div class="contents">
-        <p><input type="text" name="title" placeholder="Title" /></p>
-        <p><textarea name="description" placeholder="Description" cols="100" rows="20"></textarea></p>
+            <p><input type="text" name="title" placeholder="Title" /></p>
+            <hr>
+            <p><textarea name="description" placeholder="Description" cols="90" rows="15"></textarea></p>
         </div>
         <div class="buttons">
-            <p><input type="submit" value="Save" style="font-size: 16px;"/></p>
-            <p><input type="reset" value="Reset" style="font-size: 16px;"/>
-                <a href="memolist.php"><button style="font-size: 16px;">list</button></a>
+            <span><input type="submit" value="Save" style="font-size: 16px;" /></span>
+            <span><input type="reset" value="Reset" style="font-size: 16px;" /></span>
+            <span><a href="memolist.php"><button style="font-size: 16px;">List</button></a></span>
+        </div>
     </form>
 </body>
 
