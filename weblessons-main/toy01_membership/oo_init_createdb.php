@@ -10,6 +10,7 @@
 -->
 
 <?php
+//클라이언트 서버에서 가장 처음에 해야 할것. db이름만 달라짐.
 $dbservername = 'localhost'; // 개발 및 테스트 환경에서는 localhost를 전제로 한다.
 $dbusername = 'root';  // 현재 DBMS에 root계정을 이용하여 접속한다. -> root의 권한으로 toymembership을 만듬.
 $dbpassword = '';  // 현재 DBMS root 계정의 패스워드를 적는다.
