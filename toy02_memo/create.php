@@ -28,9 +28,9 @@
         </div>
         <br>
         <div class="contents">
-            <p><input type="text" name="title" placeholder="Title" /></p>
+            <p><input type="text" name="title" placeholder="Title" required/></p>
             <hr>
-            <p><textarea name="description" placeholder="Description" cols="90" rows="15"></textarea></p>
+            <p><textarea name="description" placeholder="Description" cols="90" rows="15" required></textarea></p>
         </div>
         <div class="buttons">
             <span><input type="submit" value="Save" style="font-size: 16px;" /></span>

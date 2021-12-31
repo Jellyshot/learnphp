@@ -19,8 +19,8 @@
   $title =  $_POST['title'];
   $description = $_POST['description'];
   
-  echo outmsg($title);
-  echo outmsg($description);
+  // echo outmsg($title);
+  // echo outmsg($description);
   // create connection
   
 
