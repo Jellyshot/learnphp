@@ -40,7 +40,11 @@ h1{
     margin: auto;
     border: 3px solid var(--white-color);
     border-radius: 5px;
-    line-height: 50px;
+    line-height: 40px;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
 }
 .contents hr{
     color: var(--white-color);
@@ -55,6 +59,11 @@ h1{
 }
 .contents input:focus{
     outline: none;
+}
+label:not(.hiddenNo){
+    padding: 5px 14px;
+    color: var(--white-color);
+    width: 10%;
 }
 .buttons{
     text-align: center;
@@ -83,7 +92,6 @@ textarea:focus{
     border-radius: 4px;
     cursor: pointer;
 }
-
 /* placeholder 색상 변경하기. */
 input::placeholder {color:var(--white-color);}
 input::-webkit-input-placeholder {color:var(--white-color);}

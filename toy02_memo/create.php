@@ -30,12 +30,12 @@
         <div class="contents">
             <p><input type="text" name="title" placeholder="Title" required/></p>
             <hr>
-            <p><textarea name="description" placeholder="Description" cols="90" rows="15" required></textarea></p>
+            <p><textarea name="description" placeholder="Description" cols="94" rows="15" required></textarea></p>
         </div>
         <div class="buttons">
             <span><input type="submit" value="Save" style="font-size: 16px;" /></span>
             <span><input type="reset" value="Reset" style="font-size: 16px;" /></span>
-            <span><a href="memolist.php"><button style="font-size: 16px;">List</button></a></span>
+            <span><input type="button" value="List" style="font-size: 16px;" onclick="history.back(-1);" /></span>
         </div>
     </form>
 </body>
