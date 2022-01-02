@@ -33,5 +33,5 @@
   $conn->close();
 
   // 프로세스 플로우를 인덱스 페이지로 돌려준다.
-  //header('Location: detailview.php?no='.$no);
+  header('Location: detailview.php?no='.$no);
 ?>
